@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Colour Sequence Game/Scenes/Tutorial.unity
+    guid: 01e4abd1ef056a54ea9b168a8fe87206
+  - enabled: 1
+    path: Assets/Colour Sequence Game/Scenes/Menu.unity
+    guid: 79afb70b969f8ae4f8d8d4090609ad50
+  - enabled: 1
+    path: Assets/Colour Sequence Game/Scenes/Game.unity
+    guid: 2ba2d5e5d7769ea4a8437b9c93b287a6
+  - enabled: 1
+    path: Assets/Colour Sequence Game/Scenes/Lose.unity
+    guid: 3866d1d2393e04d43b51d37bfd6c6aab
