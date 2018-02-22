@@ -130,8 +130,17 @@ public class GameLogic : MonoBehaviour
 			yield return new WaitForSeconds(0.3f); //We have a small delay after the player completes the sequence
 			//audioSource.PlayOneShot(sequenceCompleteSound);
 			score++; //Since the player has completed the sequence, we will add 1 to the score
-			sequenceLength++; //The sequence length is one added to it
-			StartCoroutine(GenerateNextSequence()); //We continue on with this loop, increasing the sequence one colour at a time
+
+            if (sequenceLength == 6)
+            {
+                // load the next level here...
+                Application.LoadLevel(1);
+            }
+            else
+            {
+                sequenceLength++; //The sequence length is one added to it
+			    StartCoroutine(GenerateNextSequence()); //We continue on with this loop, increasing the sequence one colour at a time
+            }
 		}
 	}
 
